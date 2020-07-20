@@ -190,7 +190,7 @@ class Extract():  # pylint:disable=too-few-public-methods
         faces and data (if on the final pass) or reprocesses data through the pipeline for serial
         processing.
         """
-        size = self._args.size if hasattr(self._args, "size") else 256
+        size = self._args.size if hasattr(self._args, "size") else 512
         saver = ImagesSaver(self._output_dir, as_bytes=True)
         exception = False
 
